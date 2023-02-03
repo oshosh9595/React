@@ -1,0 +1,72 @@
+.bheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(245, 245, 121);
+    color: white;   
+}
+
+h1 {
+    font-size: 5vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+.rowDiv, .rowDiv0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 6vh;
+    border-bottom: 1px solid gray;
+}
+
+.rowDiv:hover, .rowDiv:active {
+    background-color: bisque;
+}
+
+.rowDay {
+    width: 60vw;
+    height: 6vh;
+    padding: 12px;
+    background-color: burlywood;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.col {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#colrank {
+    width: 10%;
+}
+#colmovieNm {
+    width: 60%;
+}
+#colsalesAmt {
+    width: 20%;
+}
+#colrankInten {
+    width: 10%;
+}
+
+.spup {
+    color: red;
+}
+.spdown {
+    color: blue;
+}

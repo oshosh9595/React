@@ -1,15 +1,15 @@
-import MyDiv1 from './01/MyDiv1';
-import MyDiv2 from './01/MyDiv2';
-import MyClock from './01/MyClock';
 import './App.css';
+//import Frcst from './04/Frcst';
+import Taccident from './05/Taccident'
 
 const App = () => {
+
   return (
-    <div className='App-header'>
-      <MyDiv1 />
-      <MyDiv2 />
-      <MyClock />
-    </div>
+    //<MyClock />
+    //<Box />
+    //<Mydiv />
+    //<Frcst />
+    <Taccident />
   );
 }
 

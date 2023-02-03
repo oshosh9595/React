@@ -1,0 +1,69 @@
+.Fheader {
+    width: 100vw;
+    height: 10vw;
+    color: white;
+    background-color: rgb(159, 159, 219);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.Fmain {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.mainbox1, .mainbox2 {
+    height: 90vh;
+    display: flex;
+    align-items: top;
+    justify-content: top;
+    margin-top: 20px;
+}
+
+.mainbox1 {
+    width: 30vw;
+    flex-direction: column;
+}
+
+.mainbox2 {
+    width: 50vw;
+    margin-left: 50px;
+}
+
+.dtdiv1 {
+    display: flex;
+    width: 30vw;
+    height: 8vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.dtdiv1:hover, .dtdiv1:active {
+    color: aqua;
+    background-color: brown;
+    font-size: 20px;
+}
+
+.detail {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(10, 18, 250);
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+.lired {
+    color: red;
+    animation: 3s;
+}

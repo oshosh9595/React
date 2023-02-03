@@ -1,0 +1,65 @@
+.Taccident {
+    border: 1px solid pink;
+}
+
+.Thaeder {
+    background-color: cadetblue;
+    width: 80vw;
+    height: 10vh;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tmain {
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    border: 1px solid blueviolet;
+}
+
+.Tc1, .Tc2, .Tdata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+
+.Tc1 {
+    width: 30%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.Tc1p, .Tc2p{
+    border: 1px solid gray;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.Tc1p:hover, .Tc1p::after, .Tc2p:hover, .Tc2p::after {
+    color: white;
+    background-color: beige;
+
+}
+
+.Tc2{
+    width: 30%;
+    height: auto;
+    border: 1px solid black; 
+}
+
+.Tdata {
+    width: 40%;
+    height: auto;
+    border: 1px solid black; 
+}
