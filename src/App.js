@@ -1,5 +1,6 @@
 import './App.css';
 //import Frcst from './04/Frcst';
+import Gal from './06/Gal'
 import Taccident from './05/Taccident'
 
 const App = () => {
@@ -9,7 +10,8 @@ const App = () => {
     //<Box />
     //<Mydiv />
     //<Frcst />
-    <Taccident />
+    //<Taccident />
+    <Gal />
   );
 }
 

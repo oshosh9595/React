@@ -147,44 +147,74 @@ const Taccident = () => {
         "totalCount": 15
       } ;
 
-    console.log(apiData);
-    for(let item in Object.keys(apiData)) {
-      console.log("object 키순회 : ", item);
-    }
+    //자바스크립트 object는 키와 값으로 분리 가능
+    let objk = Object.keys(apiData);
+    let objv = Object.values(apiData);
+    console.log("object key", objk); //object 배열
+    console.log("object values", objv);
 
-    let c1, c2, data;
-    //데이터 data = > 배열 [{항목의 내용}, ...]
-    //data = apiData.data;
-    //console.log("data", data);
-    
-    //대분류 c1 => 배열 [대분류1, ...]
-    c1 = data.map((item) =>
-                item["사고유형_대분류"]
-    );
-    c1 = [...new Set(c1)];
-    //console.log("c1", c1);  
+    //배열의 map, filter
+    let newv;
+    //newv = objk = Object.keys(apiData).map((k)=> apiData[k]);
+    newv = objk.map((k)=> apiData[k]);
+    console.log("새로운 배열", newv);
 
-    //중분류 c2 => 배열 [[대분류1, 중분류1], ...]
-    c2 = [];
-    for(let item of data ) {
-      let temp = [];
-      temp.push(item.사고유형_대분류);
-      temp.push(item.사고유형_중분류);
-      c2.push(temp);
-    }
+    //배열의 fitler
+    let data;
+    data = objk.filter((item) => item==='data' && apiData[item]);
+    data = data.map((k) => apiData[k]);
+    console.log("filter로 data 추출 ", data)
 
-    console.log("c2 item", c2)
+    //오브젝트 키로 접근
+    data = apiData.data;
+    console.log("오브젝트로 키로  data추출1 ", data)
+  
+    data = apiData['data'];
+    console.log("오브젝트로 키로  data추출1 ", data)
+  
+    //대분류 추출
+    let c1 = data.map((item) => item.사고유형_대분류);
+    console.log("대분류 추출 1단계", c1);
+    c1 = new Set(c1);
+    console.log("대분류 추출 2단계 Set으로 중복제거", c1);
+    c1 = [...c1];
+    console.log("대분류 추출 3단계 Set을 Arraye변환", c1);
 
-    //c2 = data.map((item) =>
-    //            item["사고유형_중분류"]
+    //중분류
+    //let c2 = data.map((item) => 
+    //    (item.사고유형_대분류 +','+ item.사고유형_중분류).split(',')
     //);
-    //c2 = [Array.from(new Set(c2))];
-    //c2 = [...new Set(c2)];
-    //console.log("c2", c2)
+    //console.log("중분류 map으로 추출", c2);
+
+    let c2 = data.map((item) => 
+        [item.사고유형_대분류, item.사고유형_중분류]
+    );
+    console.log("중분류 map으로 추출", c2);
+    
+    //배열의 entries
+    for(let [k, v] of c2.entries()){
+      console.log("k", k, "v", v); //k에 인덱스가들어가서 키와값으로 나눠져서 나오는거다. 배열에 키는 index (위치값)
+    }
+
+    //배열
+    let c11 = data.map((item) => item.사고유형_대분류);
+    let c21 = data.map((item) => item.사고유형_중분류);
+    console.log("c11 :", c11);
+    console.log("c21 :", c21);
+
+    let cobj = {};
+    for(let [k, v] of c21.entries()){
+      console.log("k", k, "v", v);
+      cobj[v] = c11[k];
+    }
+
+    console.log("cobj", cobj); //이런방법도있지만 배열에 중복이 있는목록에서 터진다 기타가 3개있으면 마지막꺼만들어가버린다
+    
+    // {'차대사람' : ['횡단중', '차도통행증', '길가장자리구역통행증', '보도통행증']...} 이런식으로 배열나오게 만들어오기 숙제
+
 
     return (
         <>
-          <Taccidentm c1={c1} c2= {c2} data={data} />
         </>
     ) ;
 }

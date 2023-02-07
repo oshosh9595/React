@@ -44,12 +44,15 @@
     height: auto;
     text-align: center;
     border-radius: 20px;
+    margin-top: 20px;
 }
 
-.Tc1p:hover, .Tc1p::after, .Tc2p:hover, .Tc2p::after {
+.Tc1p:hover, .Tc1p::after, .Tc2p:hover, .Tc2p::after, .Tc1sel, .Tc2sel {
     color: white;
     background-color: beige;
-
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-top: 20px;
 }
 
 .Tc2{
@@ -62,4 +65,33 @@
     width: 40%;
     height: auto;
     border: 1px solid black; 
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+}
+
+ul > li {
+    display: flex;
+}
+
+.sp1, .sp11 {
+    display: inline-flex;
+    width: 40%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 221, 138);
+    color: white;
+    font-size: 0.8em;
+}
+
+.sp11 {
+    background-color: cadetblue;
+}
+
+.sp2 {
+    margin-left: 10px;
+    font-size: 0.8em;
 }
