@@ -26,3 +26,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
  # React Project1 : 시계만들기
  + https://reactclock-b0b05.web.app/
+
+# 02-07 Gal 데이터 firebase hosting : https://test-c9c80.web.app/
