@@ -1,0 +1,69 @@
+.wh {
+    width: 420px;
+    height: 80px;
+    background-color: bisque;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkdiv {
+    display: flex;
+    width: 420px;
+    height: 50vw;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.linkdiv > li {
+    border: 1px solid yellowgreen;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.w1div {
+    width: 420px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sp0, .sp1, .sp2 {   
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.sp0 {
+    width: 30%;   
+    justify-content: right;
+    color: gray;
+    border-bottom: 1px solid gray;
+    
+}
+
+.sp1 {
+    width: 20%;   
+    justify-content: center;
+    font-weight: bold;
+
+    border-bottom: 1px solid gray;
+}
+
+.sp2 {
+    width: 20%;   
+    justify-content: left;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}

@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.mvh {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(64, 146, 146);
+    color: white;
+}
+
+.mvh > h1, .mvh > form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=date] {
+    width: 40%;
+    height: 50px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+
+
+.data1{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d1, .d2, .d3 {
+    border-bottom: 1px solid gray;
+    font-size: 20px;
+    padding: 5px;
+}
+.d4, .d5, .d6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: rgb(131, 131, 237);
+    font-size: 18px;
+}
+
+.d1, .d4{
+    width: 5%;
+}
+
+.d2, .d5 {
+    text-align: center;
+    width: 50%;
+    
+}
+
+.d3, .d6 {
+    width: 7%;
+}
