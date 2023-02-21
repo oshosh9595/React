@@ -15,7 +15,6 @@ import Boxoffice from './11/Boxoffice';
 import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
-
   return (
     //<MyClock />
     //<Box />

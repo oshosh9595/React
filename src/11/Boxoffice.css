@@ -1,4 +1,146 @@
-*{
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.mvh {
+    width: 100vw;
+    height: 80px;
+
+    background-color: rgb(156, 156, 236);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mvh > h1, .mvh > form { 
+    display: flex;
+    justify-content: center;
+}
+ 
+.mvh > h1{
+    width: 70%;  
+    align-items: center;
+}
+
+.mvh > form { 
+    width: 30%;  
+    align-items: left;
+}
+
+input  {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .mvcontent {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: top;  
+}
+
+.mvlist, .mvdetail, .mvrow  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mvdetail {
+    flex-direction: column;  
+    width: 100%;
+    padding: 10px; 
+    justify-content: center;
+    align-items:top;
+    height: 100%;
+    margin: 50px 0px; 
+    border: 1px solid gray;
+    background-color:aliceblue;
+}
+.dtdiv {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.dtsp1 {
+    width: 30%;
+    display: inline-flex; 
+    font-weight: bold;
+    color: gray;
+    justify-content: right;
+}
+
+.dtsp2 {
+    width: 70%;
+    display: inline-flex;  
+    color: blue; 
+}
+.mvlist {
+    width: 60%;
+    margin: 10px 0px;
+    flex-direction: column;
+}
+
+.mvrow, .mvrow0 {
+    width: 90%;
+    height: 40px;
+    border-bottom: 1px solid gainsboro;
+    justify-content: center;
+    align-items: center;
+}
+
+.mvrow:hover, .mvrow:active {
+    background-color: gainsboro;
+}
+
+.mvrow0 {
+    background-color:cornflowerblue;
+    color: white;
+}
+
+.mvrow0 > span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.mvcol1, .mvcol2, .mvcol3 {
+    display: inline-flex;
+}
+
+.mvcol1 {
+    width : 15% ;
+    justify-content: center;
+}
+
+.mvcol2 {
+    width : 65% ;
+}
+
+.mvcol3 {
+    width : 20% ;
+    justify-content: center;
+}
+
+.mvrank {
+    display: inline-flex;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(228, 173, 173);
+    color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.mvdetail {
+    width: 30%;
+    margin-top: 10px;
+}
+/* *{
     margin: 0px;
     padding: 0px;
 }
@@ -76,3 +218,31 @@ input[type=date] {
 .d3, .d6 {
     width: 7%;
 }
+
+.mvdetail {
+    flex-direction: row;  
+    width: 100%;
+    padding: 10px; 
+    justify-content: top;
+    align-items:top;
+    height: 100%;
+    margin: 50px 0px; 
+    border: 1px solid gray;
+    background-color:aliceblue;
+}
+
+.mvrank {
+    display: inline-flex;
+    width: 50%;
+    height: 100%;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mvdetail {
+    width: 30%;
+    margin-top: 30px;
+} */
